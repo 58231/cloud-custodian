@@ -200,12 +200,12 @@ class SubnetFilter(net_filters.SubnetFilter):
 RDSCluster.filter_registry.register('network-location', net_filters.NetworkLocation)
 
 @filters.register('offhour')
-class RDSOffHour(OffHour):
+class RDSCLUSTEROffHour(OffHour):
     """Scheduled action on rds instance.
     """
     
 @filters.register('onhour')
-class RDSOnHour(OnHour):
+class RDSCLUSTEROnHour(OnHour):
     """Scheduled action on rds instance."""
 
 @RDSCluster.action_registry.register('delete')
