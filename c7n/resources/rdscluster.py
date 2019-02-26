@@ -20,6 +20,7 @@ from concurrent.futures import as_completed
 
 from c7n.actions import BaseAction
 from c7n.filters import AgeFilter, OPERATORS
+from c7n.filters.offhours import OffHour, OnHour
 import c7n.filters.vpc as net_filters
 from c7n.manager import resources
 from c7n.query import QueryResourceManager
